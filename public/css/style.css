@@ -1,0 +1,271 @@
+body {
+  font-family: "Poiret One", cursive;
+  background: #3494e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ec6ead,
+    #3494e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ec6ead,
+    #3494e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.welcome{
+  color: white;
+}
+h4 {
+  background: #28d;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.form-wrapper {
+  background: rgba(255, 255, 255, 0.089);
+  border-radius: 5px;
+  padding: 50px;
+}
+.form-control,
+.custom-select {
+  border-radius: 0px;
+  color: #495057;
+  background-color: #f1f1f19d;
+  border-color: none;
+  margin: 8px;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #ffffff;
+  border: 1px solid #b5b6b3;
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn {
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  background: #28d;
+  padding: 50px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background: #3494e6;
+  border: #3494e6;
+  outline: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #28d;
+}
+
+.login-header {
+  background: #28d;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.541);
+  padding: 12px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.navbar-brand{
+  color: white;
+  font-style: italic;
+  margin-right: 14rem;
+  font-size: 2rem;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+.login input[type="submit"] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color: #05a;
+}
+
+/*navbar*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap");
+
+nav {
+  display: flex;
+  background-color: hsl(342, 96%, 50%);
+  justify-content: space-around;
+  padding: 20px 0;
+  color: rgb(255, 254, 254);
+
+  align-items: center;
+}
+nav.logo {
+  letter-spacing: 3px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+nav ul li a {
+  color: rgb(255, 254, 254);
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.btn {
+  border-radius: 40px;
+}
+/*Hamburger */
+.menu-bars {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
+}
+.menu-bars input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-bars span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(255, 254, 254);
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.menu-bars span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-bars span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-bars input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-bars input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-bars input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .menu-bars {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(342, 96%, 50%);
+    z-index: 1;
+    transform: translateY(-100%);
+    transition: all 1s;
+  }
+}
+nav ul.slide {
+  transform: translateY(0);
+}
